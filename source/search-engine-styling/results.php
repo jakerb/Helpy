@@ -4,7 +4,7 @@
 
 	$search = $_GET['query'];
 
-	$mysqli = new mysqli("localhost", "helpy", "helpy1", "searchEngine");
+	$mysqli = new mysqli("HOST", "USERNAME", "PASSWORD", "DATABASE");
 	$result = $mysqli->query("SELECT * FROM results WHERE title LIKE '%".$search."%'");	
 
 
